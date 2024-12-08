@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "984097628429",
+    "project_id": "innoventures-bbd5c",
+    "storage_bucket": "innoventures-bbd5c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984097628429:android:e1ecb1ed45d81c11b05044",
+        "android_client_info": {
+          "package_name": "com.paruluniversity.innoventures_precisionfarming"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvw88BJIBDdRxkS34_IgDLf-rNNSMsmjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
