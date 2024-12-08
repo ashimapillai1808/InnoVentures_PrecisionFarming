@@ -2,16 +2,18 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.google.gms.google.services)
+   
+
 }
 
 android {
     namespace = "com.paruluniversity.innoventures_precisionfarming"
-    compileSdk = 34
+    compileSdk = 35  // Update to compile SDK 35
 
     defaultConfig {
         applicationId = "com.paruluniversity.innoventures_precisionfarming"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 35  // Update targetSdk to 35
         versionCode = 1
         versionName = "1.0"
 
@@ -34,9 +36,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildFeatures{
+    buildFeatures {
         viewBinding = true
     }
+    buildToolsVersion = "35.0.0"  // Optionally update build tools to match SDK 35
 }
 
 dependencies {
@@ -50,4 +53,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
+    implementation("com.google.firebase:firebase-analytics")
 }
