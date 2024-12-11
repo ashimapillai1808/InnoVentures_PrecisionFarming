@@ -6,12 +6,13 @@ plugins {
 
 android {
     namespace = "com.paruluniversity.innoventures_precisionfarming"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.paruluniversity.innoventures_precisionfarming"
-        minSdk = 26
-        targetSdk = 34
+        minSdk = 21 // Set to a reasonable level for compatibility
+        targetSdk = 35 // Match the compileSdk
+
         versionCode = 1
         versionName = "1.0"
 
@@ -48,8 +49,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.firebase.auth) // Ensure this is the latest version
-    testImplementation(libs.junit) // Ensure this is the latest version
-    androidTestImplementation(libs.androidx.junit) // Ensure this is the latest version
-    androidTestImplementation(libs.androidx.espresso.core) // Ensure this is the latest version
+    implementation(libs.firebase.auth)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
 }
