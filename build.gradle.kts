@@ -1,17 +1,11 @@
-plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.jetbrains.kotlin.android)
-    alias(libs.plugins.google.gms.google.services)
-}
-
 android {
     namespace = "com.paruluniversity.innoventures_precisionfarming"
     compileSdk = 35
 
     defaultConfig {
         applicationId = "com.paruluniversity.innoventures_precisionfarming"
-        minSdk = 21 // Set to a reasonable level for compatibility
-        targetSdk = 35 // Match the compileSdk
+        minSdk = 21
+        targetSdk = 35
 
         versionCode = 1
         versionName = "1.0"
