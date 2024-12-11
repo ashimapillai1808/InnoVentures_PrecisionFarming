@@ -13,7 +13,7 @@ android {
     defaultConfig {
         // Define the application ID and SDK versions
         applicationId = "com.paruluniversity.innoventures_precisionfarming"
-        minSdk = 21  // Set to a reasonable level for compatibility
+        minSdk = 26  // Set to a reasonable level for compatibility
         targetSdk = 35  // Match the compileSdk
 
         versionCode = 1
