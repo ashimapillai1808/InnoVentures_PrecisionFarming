@@ -49,22 +49,22 @@ class MainActivity : AppCompatActivity() {
 
         // Set onClickListeners for each card
         crops.setOnClickListener {
-            showToast("Home Clicked")
+            showToast("CropDetails Clicked")
         }
         temp.setOnClickListener {
-            showToast("Chat Clicked")
+            showToast("Crops Temperature Clicked")
         }
         soil.setOnClickListener {
-            showToast("Profile Clicked")
+            showToast("Soil moisture Clicked")
         }
         water.setOnClickListener {
-            showToast("Widget Clicked")
+            showToast("Water level Clicked")
         }
         weather.setOnClickListener {
-            showToast("Settings Clicked")
+            showToast("Weather Clicked")
         }
         profile.setOnClickListener {
-            showToast("Logout Clicked")
+            showToast("Profile Clicked")
         }
     }
 
