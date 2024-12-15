@@ -1,5 +1,6 @@
 package com.paruluniversity.innoventures_precisionfarming
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -7,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -47,24 +49,26 @@ class MainActivity : AppCompatActivity() {
         weather = findViewById(R.id.weather)
         profile = findViewById(R.id.profile)
 
+        
+
         // Set onClickListeners for each card
         crops.setOnClickListener {
-            showToast("Home Clicked")
+            showToast("CropDetails Clicked")
         }
         temp.setOnClickListener {
-            showToast("Chat Clicked")
+            showToast("Crops Temperature Clicked")
         }
         soil.setOnClickListener {
-            showToast("Profile Clicked")
+            showToast("Soil moisture Clicked")
         }
         water.setOnClickListener {
-            showToast("Widget Clicked")
+            showToast("Water level Clicked")
         }
         weather.setOnClickListener {
-            showToast("Settings Clicked")
+            showToast("Weather Clicked")
         }
         profile.setOnClickListener {
-            showToast("Logout Clicked")
+            showToast("Profile Clicked")
         }
     }
 
@@ -72,4 +76,7 @@ class MainActivity : AppCompatActivity() {
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
+
+
+
 }
