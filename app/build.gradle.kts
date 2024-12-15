@@ -13,7 +13,7 @@ android {
     defaultConfig {
         // Define the application ID and SDK versions
         applicationId = "com.paruluniversity.innoventures_precisionfarming"
-        minSdk = 26  // Set to a reasonable level for compatibility
+        minSdk = 28  // Set to a reasonable level for compatibility
         targetSdk = 35  // Match the compileSdk
 
         versionCode = 1
@@ -59,10 +59,12 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.firebase.auth)
-
+    implementation(libs.car.ui.lib)
+    implementation("com.airbnb.android:lottie:6.6.1")
     // Testing dependencies
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
 }
 

@@ -66,6 +66,8 @@ class MainActivity : AppCompatActivity() {
         }
         weather.setOnClickListener {
             showToast("Weather Clicked")
+            val intent = Intent(this, WeatherForecast::class.java)
+            startActivity(intent)
         }
         profile.setOnClickListener {
             showToast("Profile Clicked")
