@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InnoVentures_PrecisionFarming">
         <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
             android:name=".WeatherForecast"
             android:exported="false" />
         <activity
