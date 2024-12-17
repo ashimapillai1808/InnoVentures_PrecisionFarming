@@ -13,11 +13,11 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="12dp"
         android:text="My Dashboard"
-        android:textSize="30sp"
-        android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_margin="12dp"></TextView>
+        android:textSize="30sp"
+        android:textStyle="bold"></TextView>
 
     <GridLayout
         android:layout_width="match_parent"
