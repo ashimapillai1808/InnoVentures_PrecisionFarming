@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,8 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InnoVentures_PrecisionFarming">
         <activity
+            android:name=".WaterLevel"
+            android:exported="false" />
+        <activity
+            android:name=".SoilMoisture"
+            android:exported="false" />
+        <activity
+            android:name=".CropTemp"
+            android:exported="false" />
+        <activity
+            android:name=".CropDetails"
+            android:exported="false" />
+        <activity
+            android:name=".WeatherForecast"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,13 +36,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".WeatherForecast"
-            android:exported="false" />
-        <activity
             android:name=".SignInActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />
