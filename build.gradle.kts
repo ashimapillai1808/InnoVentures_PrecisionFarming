@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.google.gms.google.services)
+
 }
 
 android {
@@ -13,7 +14,7 @@ android {
     defaultConfig {
         // Define the application ID and SDK versions
         applicationId = "com.paruluniversity.innoventures_precisionfarming"
-        minSdk = 26  // Set to a reasonable level for compatibility
+        minSdk = 28  // Set to a reasonable level for compatibility
         targetSdk = 35  // Match the compileSdk
 
         versionCode = 1
@@ -59,6 +60,8 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.firebase.auth)
+    implementation("com.google.android.material:material:1.9.0")
+
 
     // Testing dependencies
     testImplementation(libs.junit)
