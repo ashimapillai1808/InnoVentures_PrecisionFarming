@@ -1,12 +1,15 @@
 package com.paruluniversity.innoventures_precisionfarming
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.database.FirebaseDatabase
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,6 +32,7 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
 
+
         // Handle window insets for edge-to-edge padding
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { view, insets ->
             // Get system bar insets (status bar, navigation bar)
@@ -43,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         crops = findViewById(R.id.crops)
         temp = findViewById(R.id.temp)
         soil = findViewById(R.id.soil)
-       water = findViewById(R.id.water)
+        water = findViewById(R.id.water)
         weather = findViewById(R.id.weather)
         profile = findViewById(R.id.profile)
 
@@ -59,6 +63,8 @@ class MainActivity : AppCompatActivity() {
         }
         water.setOnClickListener {
             showToast("Widget Clicked")
+            val nextWater = Intent(this@MainActivity, water_tank_status::class.java)
+            startActivity(nextWater)
         }
         weather.setOnClickListener {
             showToast("Settings Clicked")
@@ -66,6 +72,9 @@ class MainActivity : AppCompatActivity() {
         profile.setOnClickListener {
             showToast("Logout Clicked")
         }
+
+
+
     }
 
     // Show toast message
