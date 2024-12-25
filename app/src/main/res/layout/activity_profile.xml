@@ -342,9 +342,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@color/brown"
+                            android:text="Edit Profile"
                             android:textColor="@color/white"
-                            android:textStyle="bold"
-                            android:text="Edit Profile" />
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                     <View
