@@ -1,5 +1,6 @@
 package com.paruluniversity.innoventures_precisionfarming
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -50,21 +51,33 @@ class MainActivity : AppCompatActivity() {
         // Set onClickListeners for each card
         crops.setOnClickListener {
             showToast("Home Clicked")
+            val intent = Intent(this, CropDetails::class.java)
+            startActivity(intent)
         }
         temp.setOnClickListener {
             showToast("Chat Clicked")
+            val intent = Intent(this, CropTemp::class.java)
+            startActivity(intent)
         }
         soil.setOnClickListener {
             showToast("Profile Clicked")
+            val intent = Intent(this, SoilMoisture::class.java)
+            startActivity(intent)
         }
         water.setOnClickListener {
             showToast("Widget Clicked")
+            val intent = Intent(this, water_tank_status::class.java)
+            startActivity(intent)
         }
         weather.setOnClickListener {
             showToast("Settings Clicked")
+            val intent = Intent(this, WeatherForecast::class.java)
+            startActivity(intent)
         }
         profile.setOnClickListener {
             showToast("Logout Clicked")
+            val intent = Intent(this, Profile::class.java)
+            startActivity(intent)
         }
     }
 
