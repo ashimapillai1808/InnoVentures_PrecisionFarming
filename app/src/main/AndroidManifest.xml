@@ -14,6 +14,9 @@
         <activity
             android:name=".WaterLevel"
             android:exported="false" />
+        <activity android:name=".Profile"
+            android:exported="false"
+            />
         <activity
             android:name=".SoilMoisture"
             android:exported="false" />
@@ -37,6 +40,7 @@
         </activity>
         <activity
             android:name=".SignInActivity"
+            android:theme="@style/Base.Theme.InnoVentures_PrecisionFarming"
             android:exported="true" />
         <activity
             android:name=".SignUpActivity"

@@ -61,6 +61,7 @@ dependencies {
     implementation(libs.firebase.auth)
     implementation(libs.car.ui.lib)
     implementation("com.airbnb.android:lottie:6.6.1")
+    implementation("com.google.android.material:material:1.9.0")
     // Testing dependencies
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
