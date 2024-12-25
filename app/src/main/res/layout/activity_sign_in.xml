@@ -23,7 +23,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailLayout"
-        style="@style/LoginTextInputOuterFieldStyle"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -42,7 +42,6 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailEt"
-            style="@style/LoginTextInputInnerFieldStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Type your Email"

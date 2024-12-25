@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
                         or android.view.View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
                         or android.view.View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                 )
-
+        supportActionBar?.hide()
         setContentView(R.layout.activity_main)
 
         // Handle window insets for edge-to-edge padding
@@ -50,32 +50,32 @@ class MainActivity : AppCompatActivity() {
 
         // Set onClickListeners for each card
         crops.setOnClickListener {
-            showToast("Home Clicked")
+            showToast("CropDetails Clicked")
             val intent = Intent(this, CropDetails::class.java)
             startActivity(intent)
         }
         temp.setOnClickListener {
-            showToast("Chat Clicked")
+            showToast("CropTemperature Clicked")
             val intent = Intent(this, CropTemp::class.java)
             startActivity(intent)
         }
         soil.setOnClickListener {
-            showToast("Profile Clicked")
+            showToast("SoilMoisture Clicked")
             val intent = Intent(this, SoilMoisture::class.java)
             startActivity(intent)
         }
         water.setOnClickListener {
-            showToast("Widget Clicked")
+            showToast("WaterLevel Clicked")
             val intent = Intent(this, water_tank_status::class.java)
             startActivity(intent)
         }
         weather.setOnClickListener {
-            showToast("Settings Clicked")
+            showToast("WeatherForecast Clicked")
             val intent = Intent(this, WeatherForecast::class.java)
             startActivity(intent)
         }
         profile.setOnClickListener {
-            showToast("Logout Clicked")
+            showToast("Profile Clicked")
             val intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }

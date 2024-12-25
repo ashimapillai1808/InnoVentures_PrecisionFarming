@@ -60,6 +60,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.firebase.auth)
     implementation(libs.firebase.database.ktx)
+    implementation("com.google.android.material:material:1.9.0")
 
     // Testing dependencies
     testImplementation(libs.junit)
