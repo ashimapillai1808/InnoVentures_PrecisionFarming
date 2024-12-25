@@ -69,8 +69,8 @@ class MainActivity : AppCompatActivity() {
         }
         water.setOnClickListener {
             showToast("Water level Clicked")
-            val intent = Intent(this, WaterLevel::class.java)
-            startActivity(intent)
+//            val intent = Intent(this, WaterLevel::class.java)
+//            startActivity(intent)
         }
         weather.setOnClickListener {
             showToast("Weather Clicked")
