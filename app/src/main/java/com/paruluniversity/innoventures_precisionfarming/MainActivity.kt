@@ -51,13 +51,12 @@ class MainActivity : AppCompatActivity() {
         // Set onClickListeners for each card
         crops.setOnClickListener {
             showToast("CropDetails Clicked")
-            val intent = Intent(this, CropDetails::class.java)
+            val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
         temp.setOnClickListener {
             showToast("CropTemperature Clicked")
-            val intent = Intent(this, CropTemp::class.java)
-            startActivity(intent)
+
         }
         soil.setOnClickListener {
             showToast("SoilMoisture Clicked")

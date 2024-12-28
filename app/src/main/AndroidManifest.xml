@@ -11,50 +11,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InnoVentures_PrecisionFarming">
-
-        <!-- SplashActivity set as the launcher -->
+        <activity
+            android:name=".CropDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" /> <!-- SplashActivity set as the launcher -->
         <activity
             android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-
-        <!-- SignInActivity -->
+        </activity> <!-- SignInActivity -->
         <activity
             android:name=".SignInActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
-        <!-- SignUpActivity -->
+            android:exported="false" /> <!-- SignUpActivity -->
         <activity
             android:name=".SignUpActivity"
-            android:exported="false" />
-
-        <!-- Water Tank Status Activity -->
+            android:exported="false" /> <!-- Water Tank Status Activity -->
         <activity
             android:name=".water_tank_status"
             android:exported="false" />
-
         <activity
             android:name=".Profile"
             android:exported="false" />
-
         <activity
             android:name=".WeatherForecast"
             android:exported="false" />
-
         <activity
-            android:name=".CropDetails"
+            android:name=".SoilMoisture"
             android:exported="false" />
-
-        <activity android:name=".SoilMoisture"
-            android:exported="false"/>
 
     </application>
 

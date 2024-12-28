@@ -61,6 +61,7 @@ dependencies {
     implementation(libs.firebase.auth)
     implementation(libs.firebase.database.ktx)
     implementation("com.google.android.material:material:1.9.0")
+    implementation(libs.androidx.media3.effect)
 
     // Testing dependencies
     testImplementation(libs.junit)
