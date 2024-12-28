@@ -49,7 +49,12 @@
             android:name=".WeatherForecast"
             android:exported="false" />
 
+        <activity
+            android:name=".CropDetails"
+            android:exported="false" />
 
+        <activity android:name=".SoilMoisture"
+            android:exported="false"/>
 
     </application>
 
